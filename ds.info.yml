@@ -6,6 +6,6 @@ package: 'Display Suite'
 configure: ds.structure
 dependencies:
   - drupal:layout_discovery
-  - drupal:system (>= 8.3.x)
+  - drupal:system (>= 8.6.x)
 test_dependencies:
   - field_group:field_group
