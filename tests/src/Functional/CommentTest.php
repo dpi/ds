@@ -8,7 +8,7 @@ use Drupal\Tests\comment\Functional\CommentTestBase;
 /**
  * Tests for the manage display tab in Display Suite.
  *
- * @group ds_single
+ * @group ds
  */
 class CommentTest extends CommentTestBase {
 
