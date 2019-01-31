@@ -8,7 +8,7 @@ use Drupal\Tests\comment\Functional\CommentTestBase;
 /**
  * Tests for the manage display tab in Display Suite.
  *
- * @group ds
+ * @group ds_single
  */
 class CommentTest extends CommentTestBase {
 
@@ -101,7 +101,7 @@ class CommentTest extends CommentTestBase {
 
     // Verify there are no double ID's.
     $xpath = $this->xpath('//a[@id="comment-1"]');
-    $this->assertEquals(count($xpath), 1, '1 ID found named comment-1');
+    $this->assertEquals(1, count($xpath),'1 ID found named comment-1');
 
     // Test that hidden fields aren't exposed in the config.
     $this->dsSelectLayout();

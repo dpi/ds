@@ -611,7 +611,7 @@ function ds_field_ui_layout_clone($form, FormStateInterface $form_state) {
   $clone_display->save();
 
   // Show message.
-  drupal_set_message(t('The layout has been cloned.'));
+  \Drupal::messenger()->addMessage(t('The layout has been cloned.'));
 }
 
 /**

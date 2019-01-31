@@ -73,8 +73,7 @@ class EntitiesTest extends TestBase {
     $this->assertSession()->responseContains('group-left');
     $this->assertSession()->responseContains('group-right');
     $this->assertSession()->responseContains('<div class="field field--name-node-submitted-by field--type-ds field--label-hidden field__item">');
-    $elements = $this->xpath('//div[@class="field field--name-node-submitted-by field--type-ds field--label-hidden field__item"]');
-    $this->assertSession()->pageTextContains('Submitted by ' . $elements[0]->find('xpath', 'a')->find('xpath', 'span')->getText() . ' on', 'Submitted by line found');
+    $this->assertSession()->pageTextContains('Submitted by ' . $this->adminUser->getUsername());
 
     // Configure teaser layout.
     $teaser = [
