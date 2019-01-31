@@ -482,6 +482,7 @@ function template_preprocess_ds_entity_view(&$variables) {
  */
 function ds_preprocess_ds_layout(&$variables) {
   $layout_settings = $variables['settings'];
+  $layout_settings += ['wrappers' => []];
 
   // Fetch the entity type.
   $bundle = FALSE;
