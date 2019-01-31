@@ -77,7 +77,7 @@ class EntitiesTest extends TestBase {
 
     // Configure teaser layout.
     $teaser = [
-      'layout' => 'ds_2col',
+      'ds_layout' => 'ds_2col',
     ];
     $teaser_assert = [
       'regions' => [
@@ -137,7 +137,7 @@ class EntitiesTest extends TestBase {
 
     // Select layout and configure fields.
     $edit = [
-      'layout' => 'ds_2col',
+      'ds_layout' => 'ds_2col',
     ];
     $assert = [
       'regions' => [
@@ -220,7 +220,7 @@ class EntitiesTest extends TestBase {
     // Convert layout from test theme.
     // Configure teaser layout.
     $test_theme_template = [
-      'layout' => 'ds_test_layout_theme',
+      'ds_layout' => 'ds_test_layout_theme',
     ];
     $test_theme_template_assert = [
       'regions' => [
